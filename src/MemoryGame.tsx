@@ -25,7 +25,6 @@ const playSound = (url: string) => {
 };
 
 const generateCards = (theme: string, total: number): Card[] => {
-  console.log('pp')
   const images = allCharacters[theme].slice(0, total / 2);
   const paired = [...images, ...images];
   const shuffled = paired.sort(() => Math.random() - 0.5);
